@@ -1,5 +1,5 @@
 {% set name = "pytest-cython" %}
-{% set version = "0.1.1.post0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytest-cython-{{ version }}.tar.gz
-  sha256: 8f7c079323ccdbe214e7fff82b24c97a4bf13175edf8670259447ea2319ee15d
+  sha256: 66bb288585f91d10aec723441db503c466b11edf7060e413ff96f7fd3bced1a4
 
 build:
   number: 0
@@ -17,10 +17,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=2.6
+    - python >=3.6
   run:
-    - pytest >=2.7.3
-    - python >=2.6
+    - pytest >=4.6.0
+    - python >=3.6
 
 test:
   imports:
