@@ -1,5 +1,5 @@
 {% set name = "pytest-cython" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytest-cython-{{ version }}.tar.gz
-  sha256: 66bb288585f91d10aec723441db503c466b11edf7060e413ff96f7fd3bced1a4
+  sha256: 38d10faee6fc974a9240dccf9f85dc2534baf6be6e02a3fc77a9db8b6a5b0558
 
 build:
   number: 0
@@ -34,7 +34,9 @@ about:
   home: https://github.com/lgpage/pytest-cython
   summary: A plugin for testing Cython extension modules
   license: MIT
-  license_file: LICENSE
+  license_family: MIT
+  license_file: LICENSE.md
+  dev_url: https://github.com/lgpage/pytest-cython
 
 extra:
   recipe-maintainers:
